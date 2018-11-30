@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">ListePlanete</string>
+
+    <string-array name="planets">
+        <item>Mercure</item>
+        <item>Venus</item>
+        <item>Terre</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturne</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
+
+    <string-array name="km">
+        <item>92 millions km</item>
+        <item>42 millions </item>
+        <item>0 km</item>
+        <item>78 millions km</item>
+        <item>628 millions km</item>
+        <item>1,277 milliard km</item>
+        <item>2,719 milliards km</item>
+        <item>4,347 milliards km</item>
+    </string-array>
+
+</resources>

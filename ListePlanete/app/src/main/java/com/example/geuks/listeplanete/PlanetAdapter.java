@@ -10,13 +10,13 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
-
+//Création de la Classe fille de l'array adapter
 public class PlanetAdapter extends ArrayAdapter<cPlanet> {
     private ArrayList<cPlanet> planets;
     private int viewRes;
     private Context context;
     private Resources resource;
-
+    
     public PlanetAdapter(Context context, int textViewResourceId, ArrayList<cPlanet> planets)
     {
         super(context, textViewResourceId, planets);
@@ -69,7 +69,4 @@ public class PlanetAdapter extends ArrayAdapter<cPlanet> {
     public int getCount(){
         return planets.size();
     }
-
-
-
 }

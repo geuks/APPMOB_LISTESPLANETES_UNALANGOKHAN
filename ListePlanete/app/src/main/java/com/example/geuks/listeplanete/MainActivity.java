@@ -25,19 +25,21 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        
+        //Créations des variables
         String[] allName = getResources().getStringArray(R.array.planets);
         String[] allKm = getResources().getStringArray(R.array.km);
         final cPlanet planet = new cPlanet();
         ArrayList<cPlanet> planetsList = new ArrayList<cPlanet>();
-
+        //Initialisation de la liste
         initList(planetsList,planet, allName, allKm);
-
+        //Création de l'adapter à travers la classe
         PlanetAdapter adapter = new PlanetAdapter(this,R.layout.rowplanet,planetsList);
         final ListView list = (ListView) findViewById(R.id.list);
 
         list.setAdapter(adapter);
-
+           
+        //Création de l'event OnClick
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapter, View view, int i, long l) {
@@ -49,7 +51,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
+    
+    //Initialisation de la liste
     private void initList(ArrayList<cPlanet> planets, cPlanet planet, String[] allName, String[] allKm){
         for(int i = 0; i<allName.length; i++){
             planet = new cPlanet();
